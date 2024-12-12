@@ -7,14 +7,14 @@ public class PlayerMovement : MonoBehaviour {
     private Animator animator; // Animator for animations
 
     // List of all possible animation states
-    private List<string> stateNames = new List<string> {
-        "Front_Idle_Stand",
-        "Back_Idle_Stand",
-        "Front_Walk",
-        "Back_Walk",
-        "Front_Idle_Sit",
-        "Back_Idle_Sit"
-    };
+    // private List<string> stateNames = new List<string> {
+    //     "Front_Idle_Stand",
+    //     "Back_Idle_Stand",
+    //     "Front_Walk",
+    //     "Back_Walk",
+    //     "Front_Idle_Sit",
+    //     "Back_Idle_Sit"
+    // };
 
     // TODO: Add more animations to the list
     // TODO: There is no walk animation for facing back and walking to the left
@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour {
     // TODO: There is no idle animation for facing front and looking to the right
 
     // Suggestion for additional animations:
-    /*
     private List<string> stateNames = new List<string>{
         // Idle Animations
         "Front_Idle_Stand_Left",
@@ -43,7 +42,6 @@ public class PlayerMovement : MonoBehaviour {
         "Back_Sit",
         "Back_Idle_Sit"
     };
-    */
 
     private string currentState; // Currently playing animation
     private Vector3 moveDirection; // Movement direction of character
@@ -73,19 +71,19 @@ public class PlayerMovement : MonoBehaviour {
         // Play animations based on input
         if (moveDirection != Vector3.zero) {
             if (moveZ > 0) {
-                // PlayAnimation(isFacingRight ? "Back_Walk_Right" : "Back_Walk_Left");
-                PlayAnimation("Back_Walk");
+                PlayAnimation(isFacingRight ? "Back_Walk_Right" : "Back_Walk_Left");
+                // PlayAnimation("Back_Walk");
             } else {
-                // PlayAnimation(isFacingRight ? "Front_Walk_Right" : "Front_Walk_Left");
-                PlayAnimation("Front_Walk");
+                PlayAnimation(isFacingRight ? "Front_Walk_Right" : "Front_Walk_Left");
+                // PlayAnimation("Front_Walk");
             }
         } else {
-            if (currentState.Contains("Back")) {
-                // PlayAnimation(isFacingRight ? "Back_Idle_Stand_Right" : "Back_Idle_Stand_Left");
-                PlayAnimation("Back_Idle_Stand");
+            if (currentState != null && currentState.Contains("Back")) {
+                PlayAnimation(isFacingRight ? "Back_Idle_Stand_Right" : "Back_Idle_Stand_Left");
+                // PlayAnimation("Back_Idle_Stand");
             } else {
-                // PlayAnimation(isFacingRight ? "Front_Idle_Stand_Right" : "Front_Idle_Stand_Left");
-                PlayAnimation("Front_Idle_Stand");
+                PlayAnimation(isFacingRight ? "Front_Idle_Stand_Right" : "Front_Idle_Stand_Left");
+                // PlayAnimation("Front_Idle_Stand");
             }
         }
     }
