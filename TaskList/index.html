@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Christmas Game Dev Challenge tasks and tips">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Christmas Game Dev Challenge</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Christmas Game Dev Challenge 🎄🎮</h1>
+        <p>All tasks are located in the scene <strong>"XMAS"</strong>. Good luck and have fun developing your game!</p>
+    </header>
+
+    <main>
+        <!-- Task 1 -->
+        <section>
+            <h2>1) Add Additional Animations (Advanced+)</h2>
+            <p>
+                The following animations are missing from the project:
+                <ul>
+                    <li>The character looks forward and walks to the right</li>
+                    <li>The character looks forward/right and idles</li>
+                    <li>The character looks backward and walks to the left</li>
+                    <li>The character looks backward/left and idles</li>
+                </ul>
+            </p>
+            <p>
+                There are <strong>TODO</strong> comments in the <code>PlayerMovement</code> script to help guide you through the solution. 
+                Please ensure that the new animation clips have the same FPS as the existing clips.
+            </p>
+
+            <h3 class="spoiler-toggle">Tip 1: Animator</h3>
+            <p class="spoiler">Inspect the Animator and examine the clips already in use. In the scene, you’ll find a prefab named "Character".</p>
+
+            <h3 class="spoiler-toggle">Tip 2: FPS</h3>
+            <p class="spoiler">If the FPS for an animation clip is greyed out in the Inspector, you can change it by switching to "Debug" mode.</p>
+
+            <h3 class="spoiler-toggle">Tip 3: Reusing Animations</h3>
+            <p class="spoiler">You can copy the keyframes from an existing animation (e.g., walking right) into a new clip. To mirror the animation, add the <code>Flip X</code> property on the SpriteRenderer component and toggle it to flip the sprite.</p>
+        </section>
+
+        <!-- Task 2 -->
+        <section>
+            <h2>2) Add (Christmas) Background Music (Beginner)</h2>
+            <p>
+                Add a background music track to the scene that plays continuously during the game.
+            </p>
+
+            <h3 class="spoiler-toggle">Tip 1: Audio Source</h3>
+            <p class="spoiler">You need an AudioSource component to play an audio clip. Create an empty GameObject, add an AudioSource component to it, and select an audio clip in the AudioSource settings.</p>
+
+            <h3 class="spoiler-toggle">Tip 2: Settings</h3>
+            <p class="spoiler">Ensure the AudioSource is set to 2D (so it’s audible everywhere) and enable the "Loop" option so the music repeats automatically.</p>
+        </section>
+
+        <!-- Task 3 -->
+        <section>
+            <h2>3) Create Collectible Prefabs (Advanced)</h2>
+            <p>
+                Create a collectible prefab, such as a gift, that the player can pick up by walking over it. Make sure the collectible can be reused multiple times throughout the scene.
+            </p>
+
+            <h3 class="spoiler-toggle">Tip 1: Collider</h3>
+            <p class="spoiler">The gift prefab needs a Collider component. Set the collider to "Trigger" mode to detect when the player interacts with it.</p>
+
+            <h3 class="spoiler-toggle">Tip 2: Collecting in Code</h3>
+            <p class="spoiler">Use the <code>OnTriggerEnter</code> method to detect when the player interacts with the collectible. Check the tag of the other object using <code>if (other.CompareTag("Player"))</code> to ensure only the player can collect it.</p>
+        </section>
+
+        <!-- Task 4 -->
+        <section>
+            <h2>4) Add a Pickup Sound Effect (Beginner)</h2>
+            <p>
+                Play a sound effect whenever the player collects a gift.
+            </p>
+
+            <h3 class="spoiler-toggle">Tip 1: AudioClip</h3>
+            <p class="spoiler">You can use an AudioSource component to play a short sound effect. Add an AudioSource to the gift prefab and set it to play the sound when the player collects the item.</p>
+
+            <h3 class="spoiler-toggle">Tip 2: Trigger Sound in Code</h3>
+            <p class="spoiler">Call <code>AudioSource.Play()</code> in the <code>OnTriggerEnter</code> method to play the sound when the gift is collected.</p>
+        </section>
+
+        <!-- Task 5 -->
+        <section>
+            <h2>5) Create a UI for Collected Gifts (Advanced)</h2>
+            <p>
+                Display a counter in the UI that shows how many gifts the player has collected. The counter should update automatically as more gifts are collected.
+            </p>
+
+            <h3 class="spoiler-toggle">Tip 1: Canvas</h3>
+            <p class="spoiler">Create a Canvas in the scene and add a Text or TMP_Text element to display the count of collected gifts.</p>
+
+            <h3 class="spoiler-toggle">Tip 2: Update UI</h3>
+            <p class="spoiler">In your script, use <code>Text.text = collectedGifts.ToString()</code> or similar to update the counter dynamically whenever a gift is collected.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Good luck with the Christmas Game Dev Challenge! 🎄</p>
+    </footer>
+
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+</body>
+</html>

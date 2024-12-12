@@ -1,0 +1,196 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Festive gradient background */
+    color: #ffffff;
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #f0e68c; /* Golden text for a festive look */
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    color: #ffcccb; /* Festive red titles */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+main p, main ul {
+    text-align: left;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+main ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+/* General Styling for Spoiler Toggle and Hidden Content */
+h3.spoiler-toggle {
+    cursor: pointer;
+    color: #ff6f61; /* Festive red */
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    position: relative;
+    display: inline-block;
+}
+
+h3.spoiler-toggle::after {
+    content: " (Click to reveal)";
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.spoiler {
+    display: inline-block;
+    background: repeating-linear-gradient(
+        45deg,
+        #e0e0e0,
+        #e0e0e0 5px,
+        #d0d0d0 5px,
+        #d0d0d0 10px
+    ); /* "Bubble wrap" effect */
+    color: transparent;
+    transition: all 0.5s ease;
+    margin: 5px 0 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow: hidden;
+    text-shadow: 0 0 8px #ffffff; /* Slight glow to hide text edges */
+}
+
+.spoiler.revealed {
+    color: #ffffff; /* Reveal text color */
+    background: none;
+    text-shadow: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+/* Snowflake Effect */
+@keyframes snowfall {
+    0% {
+        transform: translateY(-10px) translateX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50vh) translateX(15px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) translateX(-15px);
+        opacity: 0;
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -22px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    animation: snowfall linear infinite;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-duration: 15s;
+    animation-delay: 4s;
+}
+.snowflake:nth-child(4) {
+    left: 40%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+.snowflake:nth-child(5) {
+    left: 50%;
+    animation-duration: 14s;
+    animation-delay: 3s;
+}
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+.snowflake:nth-child(7) {
+    left: 70%;
+    animation-duration: 13s;
+    animation-delay: 5s;
+}
+.snowflake:nth-child(8) {
+    left: 80%;
+    animation-duration: 9s;
+    animation-delay: 6s;
+}
+.snowflake:nth-child(9) {
+    left: 90%;
+    animation-duration: 11s;
+    animation-delay: 8s;
+}
+.snowflake:nth-child(10) {
+    left: 95%;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}
