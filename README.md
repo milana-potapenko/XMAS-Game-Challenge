@@ -35,10 +35,22 @@ Here’s an overview of the repository structure:
 - **Interactive task list** to track your progress.
 
 ## Contributions
-Feel free to contribute by:
+Feel free to create a Pull Request and contribute by:
 - Adding new challenges or mechanics to the HTML task list.
 - Enhancing the Unity project with more festive features.
 - Improving documentation or providing additional resources.
+
+## Asset Credits
+There are various assets used in this project that are sourced from the following creators:
+- [POLYCRAFT - Christmas Tree](https://assetstore.unity.com/packages/3d/vegetation/trees/polycraft-christmas-tree-108277) by **LowlyPoly**
+- [FREE Snowman](https://assetstore.unity.com/packages/3d/props/free-snowman-105123) by **ANGRY MESH**
+- [Lowpoly Forest Pack Winter](https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-forest-pack-winter-129565) by **Onerat Pty Ltd**
+- [Low-Poly Simple Nature Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153) by **JustCreate**
+- [Minimalist Christmas](https://assetstore.unity.com/packages/3d/environments/minimalist-christmas-50549) by **Broken Ellipse**
+- [Isometric Character - Dog](https://assetstore.unity.com/packages/2d/characters/isometric-character-dog-302332) by **Graphie**
+- [Christmas Music - Loop Instrumental](https://assetstore.unity.com/packages/audio/music/christmas-music-loop-instrumental-129979) by **DC_Assets_UY**
+- [Inventory Sound Effects](https://opengameart.org/content/inventory-sound-effects) by **artisticdude**
+
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
