@@ -47,7 +47,12 @@
         <section>
             <h2>2) Add (Christmas) Background Music (Beginner)</h2>
             <p>
-                Add a background music track to the scene that plays continuously during the game.
+                Add a background music track to the scene that plays continuously during the game. You can use the provided music from the audio->music folder or use your own audio clip. 
+                <ul>
+                    <li>The music should start playing as soon as the scene loads.</li>
+                    <li>The music should loop seamlessly.</li>
+                    <li>The music should be audible everywhere in the scene.</li>
+                </ul>
             </p>
 
             <h3 class="spoiler-toggle">Tip 1: Audio Source</h3>
@@ -61,7 +66,7 @@
         <section>
             <h2>3) Create Collectible Prefabs (Advanced)</h2>
             <p>
-                Create a collectible prefab, such as a gift, that the player can pick up by walking over it. Make sure the collectible can be reused multiple times throughout the scene.
+                Create a collectible prefab, such as a gift, that the player can pick up by walking over it. Make sure the collectible can be reused multiple times throughout the scene (Prefab).
             </p>
 
             <h3 class="spoiler-toggle">Tip 1: Collider</h3>
@@ -75,7 +80,7 @@
         <section>
             <h2>4) Add a Pickup Sound Effect (Beginner)</h2>
             <p>
-                Play a sound effect whenever the player collects a gift.
+                Play a sound effect whenever the player collects a gift. You can use one of the provided sound effect from the audio->sounds folder or use your own audio clip.
             </p>
 
             <h3 class="spoiler-toggle">Tip 1: AudioClip</h3>
@@ -89,7 +94,7 @@
         <section>
             <h2>5) Create a UI for Collected Gifts (Advanced)</h2>
             <p>
-                Display a counter in the UI that shows how many gifts the player has collected. The counter should update automatically as more gifts are collected.
+                Display an icon with a counter in the UI that shows how many gifts the player has collected. You can use the provided presents in the 2D folder or you can use your own images. The counter should update automatically as more gifts are collected.
             </p>
 
             <h3 class="spoiler-toggle">Tip 1: Canvas</h3>
@@ -98,6 +103,28 @@
             <h3 class="spoiler-toggle">Tip 2: Update UI</h3>
             <p class="spoiler">In your script, use <code>Text.text = collectedGifts.ToString()</code> or similar to update the counter dynamically whenever a gift is collected.</p>
         </section>
+
+        <!-- Task 6 -->
+         <section>
+            <h2>6) Let it Snow! ❄️❄️❄️ (Intermediate)</h2>
+            <p>
+                Add a particle effect to the scene that simulates snowfall. The particle effect does not need to be complex, but it should be visible throughout the scene. To create a particle system in Unity, you can right-click in the Hierarchy, go to Effects, and select Particle System.
+            </p>
+
+            <h3 class="spoiler-toggle">Tip 1: 2min Youtube Tutorial</h3>
+            <p class="spoiler">For further guidance, you can watch this <a href="https://www.youtube.com/watch?v=T_8cPlpTr90" target="_blank">2-minute tutorial</a> on how to create a snow particle system in Unity.</p>
+         </section>
+
+         <!-- Task 7 -->
+            <section>
+                <h2>7) Enhance the Demo with your own Mechanic (Advanced++)</h2>
+                <p>
+                    At the moment the game is quite simple and can hardly be called a game. Enhance the demo with your own mechanic or feature. This could be a new collectible, a new level, or anything else you can think of. Maybe there is a timer and the presents have to be deliverd to a specific location in time? Be creative and have fun!
+                </p>
+
+                <h3 class="spoiler-toggle">Tip 1: 👀</h3>
+                <p class="spoiler">Nothing to see here, just be creative and have fun! 🎉</p>
+            </section>
     </main>
 
     <footer>

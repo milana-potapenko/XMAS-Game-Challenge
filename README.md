@@ -50,6 +50,7 @@ There are various assets used in this project that are sourced from the followin
 - [Isometric Character - Dog](https://assetstore.unity.com/packages/2d/characters/isometric-character-dog-302332) by **Graphie**
 - [Christmas Music - Loop Instrumental](https://assetstore.unity.com/packages/audio/music/christmas-music-loop-instrumental-129979) by **DC_Assets_UY**
 - [Inventory Sound Effects](https://opengameart.org/content/inventory-sound-effects) by **artisticdude**
+- [Christmas Presents](https://opengameart.org/content/christmas-presents) by **pechvogel**
 
 
 ## License

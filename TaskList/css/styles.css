@@ -76,7 +76,7 @@ h3.spoiler-toggle {
     font-size: 1.2rem;
     margin: 10px 0 0;
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 h3.spoiler-toggle::after {
@@ -108,6 +108,15 @@ h3.spoiler-toggle::after {
     color: #ffffff; /* Reveal text color */
     background: none;
     text-shadow: none;
+}
+
+.spoiler a {
+    display: none;
+}
+
+.spoiler.revealed a {
+    display: inline;
+    color: #ff6f61; /* Festive red */
 }
 
 /* Footer */
